@@ -1,14 +1,28 @@
 @media (min-width: 1024px) {
-    
+    #header #mobile-menu {
+        display: none;
+    }
 }
 @media (min-width: 740px) and (max-width: 1023px) {
-    
+    #header #mobile-menu {
+        display: none;
+    }
 }
 @media (max-width: 739px) {
-    #nav li {
+    #header #mobile-menu {
         display: block;
+    }
+    #nav > li {
+        display: block;
+    }
+    #nav > li:first-child {
+        display: inline-block;
     }
     #header .header-search {
         display: none;
     }
+    #header #nav {
+        display: block;
+    }
+    
 }
