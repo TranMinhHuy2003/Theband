@@ -111,12 +111,23 @@ html {
     overflow: hidden;
 }
 
+#header #mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 #nav {
     display: inline-block;
 }
 
+#nav > li {
+    display: block;
+}
+
 #nav li {
     display: inline-block;
+    position: relative;
 }
 
 #nav li a {
@@ -124,7 +135,7 @@ html {
     text-decoration: none;
     padding: 0 24px;
     line-height: 46.5px;
-    display: inline-block;
+    display: block;
 }
 
 #nav > li > a {
