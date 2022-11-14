@@ -239,12 +239,18 @@
         }
       }
 
-      //Tự động đóng khi click menu
+      //Tự động đóng khi click menu ngoại trừ More
       var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
       for (var i = 0; i < menuItems.length; i++) {
         var menuItem = menuItems[i];
-        menuItem.onclick = function () {
-          jsheader.style.height = null;
+        
+        menuItem.onclick = function (event) {
+          var isParent = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+          if (isParent) {
+            event.preventDefault();
+          } else {
+            jsheader.style.height = null;
+          }
         }
       }
     </script>
