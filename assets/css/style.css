@@ -108,6 +108,7 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
+    
 }
 
 #header #mobile-menu {
@@ -362,7 +363,7 @@ html {
 
 /*Contact form*/
 .contact-content {
-    margin-top: 48px;
+    margin-top: 32px;
     padding-bottom: 48px;
 }
 
