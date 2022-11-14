@@ -9,6 +9,7 @@
     }
 }
 @media (max-width: 739px) {
+
     #header #mobile-menu {
         display: block;
     }
@@ -34,6 +35,29 @@
     #nav .subnav li a {
         color: #fff;
         padding: 5px 41px;
+    }
+    #nav .subnav li a:hover {
+        color: #000;
+    }
+    #content .member-item {
+        width: 100%;
+        margin-top: 30px;
+    }
+    #content .avatar {
+        width: 60%;
+    }
+    #content .tour-place {
+        width: 100%;
+        margin-top: 16px;
+    }
+    #content .contact-element {
+        width: 100%;
+    }
+    #content .contact-form-element {
+        width: 100%;
+    }
+    #slider .text-content {
+        display: none;
     }
     
 }
