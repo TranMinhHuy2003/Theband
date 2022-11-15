@@ -56,8 +56,13 @@
     #content .contact-form-element {
         width: 100%;
     }
+    #content .email-element {
+        margin-top: 8px;
+    }
     #slider .text-content {
         display: none;
     }
-    
+    .modal {
+        top: -180px;
+    }
 }
