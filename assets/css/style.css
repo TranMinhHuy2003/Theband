@@ -96,10 +96,6 @@ html {
 }
 
 /*Main*/
-#main {
-
-} 
-
 #header {
     height: 46.5px;
     background-color: black;
@@ -158,7 +154,7 @@ html {
     padding: 0 16px;
 }
 
-#nav .subnav li:hover a {
+#nav .subnav li:hover {
     background-color: #ccc;
 }
 
@@ -231,15 +227,13 @@ html {
 #slider .text-content .text-heading {
     font-weight: 400;
     font-size: 24px;
+    text-shadow: 0 0 2px #000;
 }
 
 #slider .text-content .text-descr {
     font-size: 15px;
     margin-top: 25px;
-}
-
-#content {
-    
+    text-shadow: 0 0 2px #000;
 }
 
 #content .content-section {
@@ -372,6 +366,15 @@ html {
     line-height: 1.5;
     font-family: sans-serif;
     font-weight: 500;
+}
+
+.contact-info a {
+    color: blue;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-info i {
@@ -540,11 +543,3 @@ html {
         transform: translateY(0);
     }
 }
-
-/*
-Responsive
--PC: >= 1024px
--Tablet: >= 740px & < 1024
--Phone: < 740px
-*/
-
