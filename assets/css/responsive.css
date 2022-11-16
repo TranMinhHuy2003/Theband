@@ -1,15 +1,40 @@
+/* PC */
 @media (min-width: 1024px) {
     #header #mobile-menu {
         display: none;
     }
 }
+
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+    .btn {
+        padding: 13.5px 15px;
+    }
+    .contact-form .form-control {
+        padding: 14px;
+    }
+    .social-network {
+        font-size: 30px;
+    }
+    .social-network a {
+        margin: 0 8px;
+    }
+}
+
+
+/* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
     #header #mobile-menu {
         display: none;
     }
 }
-@media (max-width: 739px) {
 
+/* Mobile */
+@media (max-width: 739px) {
+    .col-full-mobile,
+    .s-full-width {
+        width: 100% !important;
+    }
     #header #mobile-menu {
         display: block;
     }
@@ -49,12 +74,6 @@
     #content .tour-place {
         width: 100%;
         margin-top: 16px;
-    }
-    #content .contact-element {
-        width: 100%;
-    }
-    #content .contact-form-element {
-        width: 100%;
     }
     #content .email-element {
         margin-top: 8px;
