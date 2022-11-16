@@ -1,12 +1,18 @@
+/*
+Responsive
+-PC: >= 1024px
+-Tablet: >= 740px & < 1024
+-Phone: < 740px
+*/
 /* PC */
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
     #header #mobile-menu {
         display: none;
     }
 }
 
 /* Tablet & Mobile */
-@media (max-width: 1023px) {
+@media (max-width: 63.9375em) {
     .btn {
         padding: 13.5px 15px;
     }
@@ -14,7 +20,7 @@
         padding: 14px;
     }
     .social-network {
-        font-size: 30px;
+        font-size: 26px;
     }
     .social-network a {
         margin: 0 8px;
@@ -23,14 +29,23 @@
 
 
 /* Tablet */
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
     #header #mobile-menu {
         display: none;
+    }
+    #nav .subnav li {
+        padding: 5px 0;
+    }
+    .contact-info {
+        line-height: 1.8;
     }
 }
 
 /* Mobile */
-@media (max-width: 739px) {
+@media (max-width: 46.1875em) {
+    .padding1117 {
+        padding: 15px 17px !important;
+    }
     .col-full-mobile,
     .s-full-width {
         width: 100% !important;
