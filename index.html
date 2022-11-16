@@ -40,9 +40,34 @@
         </div>
 
         <div id="slider">
-          <div class="text-content">
-            <h2 class="text-heading">Chicago</h2>
-            <div class="text-descr">Thank you, Chicago - A night we won't forget.</div>
+          <div class="slide">
+            <div class="slide-img">
+              <img id="img" src="./assets/img/chicago.jpg" alt="">
+            </div>
+            <div class="text-content">
+              <h2 class="text-heading">Chicago</h2>
+              <div class="text-descr">Thank you, Chicago - A night we won't forget.</div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-img">
+              <img id="img" src="./assets/img/la.jpg" alt="">
+            </div>
+            <div class="text-content">
+              <h2 class="text-heading">Los Angeles</h2>
+              <div class="text-descr">We had the best time playing at Venice Beach!</div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-img">
+              <img id="img" src="./assets/img/ny.jpg" alt="">
+            </div>
+            <div class="text-content">
+              <h2 class="text-heading">New York</h2>
+              <div class="text-descr">The atmosphere in New York is lorem ipsum.</div>
+            </div>
           </div>
         </div>
 
@@ -197,6 +222,25 @@
         </footer>
       </div>
     </div>
+
+    <script>
+      var index = 0;
+      changeImage();
+
+      function changeImage() {
+        var i;
+        var x = document.getElementsByClassName("slide");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {
+          index = 1;
+        }
+        x[index - 1].style.display = "block";
+        setTimeout (changeImage,4000);
+      }
+    </script>
 
     <script>
       const modalBtns = document.querySelectorAll('.js-buy-ticket')
