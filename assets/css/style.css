@@ -205,12 +205,14 @@ html {
 
 #slider {
     margin-top: 46.5px;
-    padding-top: 50%;
-    background-image: url('../img/chicago.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
+}
+
+#slider .slide {
     position: relative;
+}
+
+#slider .slide .slide-img img {
+    width: 100%;
 }
 
 #slider .text-content {
